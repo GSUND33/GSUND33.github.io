@@ -1,185 +1,55 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
-
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
-  <section>
-<body>
-  <table border="1">
-    <thead>
-      <tr>
-        <th colspan="4">Regional Sales Q1</th>
-      </tr>
-      <tr>
-        <th>Region</th>
-        <th>Sales Person</th>
-        <th>Amount</th>
-        <th>Total</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>North-West</td>
-        <td>Tim</td>
-        <td>$3,000</td>
-        <td>$24,700</td>
-      </tr>
-      <tr>
-        <td>South-East</td>
-        <td>Ashley</td>
-        <td>$1,500</td>
-      </tr>
-      <tr>
-        <td>South-West</td>
-        <td>Jeff</td>
-        <td>$1,000</td>
-      </tr>
-      <tr>
-        <td>North-West</td>
-        <td>Sarah</td>
-        <td>$4,000</td>
-      </tr>
-      <tr>
-        <td>North-East</td>
-        <td>Alex</td>
-        <td>$2,000</td>
-      </tr>
-      <tr>
-        <td>North-East</td>
-        <td>Kevin</td>
-        <td>$5,000</td>
-      </tr>
-      <tr>
-        <td>South-East</td>
-        <td>Patricia</td>
-        <td>$6,300</td>
-      </tr>
-      <tr>
-        <td>South-West</td>
-        <td>Arnold</td>
-        <td>$200</td>
-      </tr>
-      <tr>
-        <td>North-West</td>
-        <td>Lindsay</td>
-        <td>$800</td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <td colspan="4">Q1 Employee Sales By Region</td>
-      </tr>
-    </tfoot>
-  </table>
-</body>
 
-</html>
-  </section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
 
-  <h1>Gayatri Sundaresan BIO</h1>
-
-  <a href="https://www.cnn.com" target="_blank"><img width="200"
-   <img src="http://lorempixel.com/400/200//"> alt ="Gayatri"
-
-</a>
-
-<p> Gayatri is a human on this big planet. Gayatri lives in Arlington, VA in a apartment with lots of people. 
-  Gayatri is learning a Data class which is very new to her
-
-</p>
-
-<ul>
-  <a href="https://www.bbc.com">
-  
-  <a href="www.vogue.com">
-
-  <a href="wwww.washingtonpost.com"
-
-  <a href="www.facebook.com"
-
-  </a>
-  </a>
-  </a> 
-  </a>
-</ul>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./static/js/app.js"></script>
+  <script src="./static/js/bonus.js"></script>
 
 </body>
-
-<body>
-    <table border="1">
-      <thead>
-        <tr>
-          <th colspan="4">Regional Sales Q1</th>
-        </tr>
-        <tr>
-          <th>Region</th>
-          <th>Sales Person</th>
-          <th>Amount</th>
-          <th>Total</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>North-West</td>
-          <td>Tim</td>
-          <td>$3,000</td>
-          <td>$24,700</td>
-        </tr>
-        <tr>
-          <td>South-East</td>
-          <td>Ashley</td>
-          <td>$1,500</td>
-        </tr>
-        <tr>
-          <td>South-West</td>
-          <td>Jeff</td>
-          <td>$1,000</td>
-        </tr>
-        <tr>
-          <td>North-West</td>
-          <td>Sarah</td>
-          <td>$4,000</td>
-        </tr>
-        <tr>
-          <td>North-East</td>
-          <td>Alex</td>
-          <td>$2,000</td>
-        </tr>
-        <tr>
-          <td>North-East</td>
-          <td>Kevin</td>
-          <td>$5,000</td>
-        </tr>
-        <tr>
-          <td>South-East</td>
-          <td>Patricia</td>
-          <td>$6,300</td>
-        </tr>
-        <tr>
-          <td>South-West</td>
-          <td>Arnold</td>
-          <td>$200</td>
-        </tr>
-        <tr>
-          <td>North-West</td>
-          <td>Lindsay</td>
-          <td>$800</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="4">Q1 Employee Sales By Region</td>
-        </tr>
-      </tfoot>
-    </table>
-  </body>
-  
-  </html>
-
 
 </html>
